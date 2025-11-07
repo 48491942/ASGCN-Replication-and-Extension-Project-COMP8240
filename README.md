@@ -85,7 +85,7 @@ cd /path/to/ASGCN
 ### 5. Add new project files
 Copy the files from **this** repository into the **ASGCN** folder:   
 - Copy the `datasets/reddit/` and `datasets/mams/` folders into the `ASGCN/datasets/` folder.
-- Copy the `logs/` folder into the `ASGCN/` root directory.
+- Copy the `log/` folder into the `ASGCN/` root directory.
 - Modify the `ASGCN/data_utils.py` to include the new 'reddit' and 'mams' datasets in the `fname` dictionary.
 - Modify the `ASGCN/dependency_graph.py` and `ASGCN/dependency_tree.py` to process the new `.raw` files. (This step is already complete, as the `.graph` and `.tree` files are provided here).
 
