@@ -68,7 +68,7 @@ git clone https://github.com/48491942/ASGCN-Replication-and-Extension-Project-CO
 ### 3. Set up the Environment
 We will create a new Conda environment and install all packages from this project's `requirements.txt` file.  
 ```bash
-conda create -n asgcn_project python=3.8
+conda create -n asgcn_project python=3.6
 conda activate asgcn_project
 ```
 
