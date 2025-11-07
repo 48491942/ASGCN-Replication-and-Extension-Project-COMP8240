@@ -43,7 +43,7 @@ Contains the final, model-ready datasets.
 - `reddit/`: Includes `reddit_train.raw`, `reddit_test.raw`, and the corresponding `.graph` and `.tree` files.  
 - `mams/`: Includes the converted `MAMS_train.raw`, `MAMS_test.raw`, and their corresponding `.graph` and `.tree` files.
 
-### `/logs/`
+### `/log/`
 Contains `.txt` output logs from experimental runs, including **Accuracy** and **F1-scores** for both the replication and new dataset experiments.
 
 ### `requirements.txt`
