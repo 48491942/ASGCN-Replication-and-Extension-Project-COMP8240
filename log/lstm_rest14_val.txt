@@ -1,0 +1,1 @@
+repeat: 1max_test_acc: 0.775, max_test_f1: 0.659865836012992repeat: 2max_test_acc: 0.7714285714285715, max_test_f1: 0.6578390429362586repeat: 3max_test_acc: 0.7785714285714286, max_test_f1: 0.6645200478483565
