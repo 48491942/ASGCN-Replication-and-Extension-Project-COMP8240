@@ -58,5 +58,48 @@ To replicate or extend the experiments, combine the **original ASGCN code** with
 ### 1. Clone the Original ASGCN Repository
 ```bash
 git clone https://github.com/GeneZC/ASGCN.git
-cd ASGCN
+```
 
+### 2. Clone this project Repository
+```bash
+git clone https://github.com/48491942/ASGCN-Replication-and-Extension-Project-COMP8240.git
+```
+
+### 3. Set up the Environment
+We will create a new Conda environment and install all packages from this project's `requirements.txt` file.  
+```bash
+conda create -n asgcn_project python=3.8
+conda activate asgcn_project
+```
+
+Install all required packages by providing the folder path in which the `requirements.txt` file is located.
+``` bash
+pip install -r /path/to/requirements.txt
+```
+
+### 4. Navigate to the **ASGCN** folder you just cloned from the original respository
+```bash
+cd ASGCN
+```
+
+### 5. Add new project files
+Copy the files from **this** repository into the **ASGCN** folder:   
+- Copy the `datasets/reddit/` and `datasets/mams/` folders into the `ASGCN/datasets/` folder.
+- Copy the `logs/` folder into the `ASGCN/` root directory.
+- Modify the `ASGCN/data_utils.py` to include the new 'reddit' and 'mams' datasets in the `fname` dictionary.
+- Modify the `ASGCN/dependency_graph.py` and `ASGCN/dependency_tree.py` to process the new `.raw` files. (This step is already complete, as the `.graph` and `.tree` files are already provided).
+
+
+### 6. Run the experiments
+You can now run the training scripts as described in the original repository.
+
+Example: Run ASGCN-DG on the new Reddit dataset
+
+```bash
+python train.py --model_name asgcn --dataset reddit
+```
+Example: Run ASGCN-DT on the new MAMS dataset
+
+```bash
+python train.py --model_name astcn --dataset mams
+```
