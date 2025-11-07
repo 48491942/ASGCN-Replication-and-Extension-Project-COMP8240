@@ -79,7 +79,7 @@ pip install -r /path/to/requirements.txt
 
 ### 4. Navigate to the **ASGCN** folder you just cloned from the original respository
 ```bash
-cd ASGCN
+cd /path/to/ASGCN
 ```
 
 ### 5. Add new project files
